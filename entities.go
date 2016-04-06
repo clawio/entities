@@ -1,7 +1,9 @@
 package entities
 
-type User struct {
-	Username    string `json:"username"`
-	Email       string `json:"email"`
-	DisplayName string `json:"display_name"`
+// User represents an user of the system.
+// They are created by the authentication service.
+type User interface {
+	Username() string
+	Email() string
+	DisplayName() string
 }
