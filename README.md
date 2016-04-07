@@ -1,9 +1,9 @@
 # entities
 ClawIO Entities that are used by multiple services.
 
-|Build|
-|-----|
-|[![Build Status](https://drone.io/github.com/clawio/entities/status.png)](https://drone.io/github.com/clawio/entities/latest)|
+|Doc|Build|
+|---|-----|
+|[![GoDoc](https://godoc.org/github.com/clawio/entities?status.svg)](https://godoc.org/github.com/clawio/entities)|[![Build Status](https://drone.io/github.com/clawio/entities/status.png)](https://drone.io/github.com/clawio/entities/latest)|
 
 This repository contains the definition of the following entities:
 
