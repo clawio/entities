@@ -1,9 +1,9 @@
-|Doc|Build|
-|---|-----|
-|[![GoDoc](https://godoc.org/github.com/clawio/entities?status.svg)](https://godoc.org/github.com/clawio/entities)|[![Build Status](https://drone.io/github.com/clawio/entities/status.png)](https://drone.io/github.com/clawio/entities/latest)|
+
+[![GoDoc](https://godoc.org/github.com/clawio/entities?status.svg)](https://godoc.org/github.com/clawio/entities)
+[![Build Status](https://drone.io/github.com/clawio/entities/status.png)](https://drone.io/github.com/clawio/entities/latest)
 
 
-This repository defines the entities used in the system. There are the following
-definitions:
+This repository defines the entities used by multiple ClawIO services (authentication, metadata ...).
+Current entities are as follows:
 
-* User: represents an user of the system.
+* User: identifies an user of the system. It has an username, email and display name.
