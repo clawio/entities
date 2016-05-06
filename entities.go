@@ -16,7 +16,7 @@ type (
 	// from an object, either tree or blob.
 	ObjectInfo struct {
 		PathSpec string     `json:"pathspec"`
-		Size     int        `json:"size"`
+		Size     int64      `json:"size"`
 		Type     ObjectType `json:"type"`
 		MimeType string     `json:"mime_type"`
 		Checksum string     `json:"checksum"`
