@@ -12,20 +12,21 @@ type (
 	// ObjectType indicates if the object is either a Tree or a BLOB.
 	ObjectType int
 
-	// Metadata represents the metadata information retrieved
+	// ObjectInfo represents the metadata information retrieved
 	// from an object, either tree or blob.
-	ObjectInfo interface {
-		GetPathSpec() string
-		GetSize() uint64
-		GetType() ObjectType
-		GetMimeType() string
-		GetChecksum() string
+	ObjectInfo struct {
+		PathSpec string     `json:"pathspec"`
+		Size     int        `json:"size"`
+		Type     ObjectType `json:"type"`
+		MimeType string     `json:"mime_type"`
+		Checksum string     `json:"checksum"`
 	}
+
 	// User represents an user of the system.
 	// They are created by the authentication service.
-	User interface {
-		GetUsername() string
-		GetEmail() string
-		GetDisplayName() string
+	User struct {
+		Username    string `json:"username"`
+		Email       string `json:"email"`
+		DisplayName string `json:"display_name"`
 	}
 )
